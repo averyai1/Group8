@@ -1,8 +1,73 @@
 body {
-    background-color:rgb(0, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-img {
-    width: 24vw;
-    height: 24vw;
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid darkgrey;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-item {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* clears blur */
+.no-blur {
+    filter: none;
+}
+
+/*blurs body also setting blur strengt and transition*/
+body.blurred > :not(.navbar) {
+    filter: blur(1.5px); 
+    transition: filter 0.5s ease; 
+  }
+/*transition to clear*/
+body > :not(.navbar) {
+    transition: filter 0.5s ease;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 60px; 
+    padding: 20px 0;
+}
+
+.home-image {
+    width: calc(18% - 10px); 
+    border-radius: 10px; 
+    margin: 20px; 
+}
+
+.project-goal {
+    text-align: center; 
+    margin: 20px 0; 
+    padding: 20px; 
+}
+
+.project-goal h2 {
+    margin-bottom: 0.5em; 
+}
+
+.project-goal p {
+    margin-bottom: 2em; 
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px; 
 }
