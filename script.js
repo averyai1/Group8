@@ -10,3 +10,20 @@ function toggleBlur(on) {
 //checks if mouse is on or off 
 navbar.addEventListener('mouseenter', () => toggleBlur(true));
 navbar.addEventListener('mouseleave', () => toggleBlur(false));
+
+document.querySelectorAll('.nav-item a').forEach(link => {
+  link.addEventListener('click', function(e) {
+      e.preventDefault(); // Stop the default anchor behavior
+      const targetId = this.getAttribute('href').substring(1); // Get the target ID (removing the #)
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+          const offsetTop = targetElement.offsetTop - 60; // Adjust 60 to the height of your navbar
+          window.scrollTo({
+              top: offsetTop,
+              behavior: "smooth"
+          });
+      }
+  });
+});
+

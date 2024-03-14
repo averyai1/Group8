@@ -1,73 +1,123 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'PT Serif', sans-serif;
 }
 
+/*Handling nav bar items and styling for them*/
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    border-bottom: 2px solid darkgrey;
+    border-bottom: 0.5px solid darkgrey;
     padding: 1em 0;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10;
+    z-index: 5;
 }
-
 .nav-item {
     color: black;
-    padding: 10px 20px;
+    padding: 0.1em 0.625em; 
     text-decoration: none;
     font-weight: bold;
+    font-size: calc(0.9em + 0.5vw); 
+    position: relative;
 }
 
-/* clears blur */
+
+/* Dropdown styles and content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/*Adding and removing blur affect and transitioning it in and out*/
 .no-blur {
     filter: none;
 }
-
-/*blurs body also setting blur strengt and transition*/
 body.blurred > :not(.navbar) {
-    filter: blur(1.5px); 
-    transition: filter 0.5s ease; 
-  }
-/*transition to clear*/
+    filter: blur(2px);
+    transition: filter 0.5s ease;
+}
 body > :not(.navbar) {
     transition: filter 0.5s ease;
 }
 
+/*image positioning*/
 .image-row {
     display: flex;
-    justify-content: center; 
-    flex-wrap: wrap; 
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 60px; 
     padding: 20px 0;
 }
-
 .home-image {
-    width: calc(18% - 10px); 
-    border-radius: 10px; 
-    margin: 20px; 
-}
-
-.project-goal {
-    text-align: center; 
-    margin: 20px 0; 
-    padding: 20px; 
-}
-
-.project-goal h2 {
-    margin-bottom: 0.5em; 
-}
-
-.project-goal p {
-    margin-bottom: 2em; 
+    width: calc(25% - 40px); 
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .section-title {
     text-align: center;
-    margin: 40px 0 20px; 
+    margin: 40px 0 20px;
+}
+
+/*setting container for the background video*/
+.video-background-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px; 
+}
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+/*setting area for project goal section also where we set opacity for it*/
+.project-goal-content {
+    position: absolute;
+    bottom: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    background: rgba(255, 255, 255, 0); /*last number is for opacity*/
+    padding: 20px;
+    text-align: center; 
+    color: #ffffff; 
+    width: 90%; 
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        padding: 0.5em; 
+        font-size: calc(0.8em + 2vw); 
+    }
 }
