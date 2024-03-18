@@ -18,7 +18,7 @@ document.querySelectorAll('.nav-item a').forEach(link => {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-          const offsetTop = targetElement.offsetTop - 60; // Adjust 60 to the height of your navbar
+          const offsetTop = targetElement.offsetTop - 60; 
           window.scrollTo({
               top: offsetTop,
               behavior: "smooth"
