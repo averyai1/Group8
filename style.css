@@ -121,3 +121,32 @@ body > :not(.navbar) {
         font-size: calc(0.8em + 2vw); 
     }
 }
+
+/*table styling*/
+.resTable{
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    padding: 20px;
+}
+
+th{
+    font-size: 40px;
+    padding: .5em;
+}
+td{
+    font-size: 15px;
+    text-align: center;
+}
+tr{
+
+}
+
+/*Arduino Graph styling*/
+.graph1{
+    width: calc(50% - 40px); 
+    border-radius: 10px;
+    margin-left: 45%;
+    
+}
