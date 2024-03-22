@@ -17,6 +17,7 @@ body {
     top: 0;
     z-index: 5;
 }
+/*Nav bar individual items*/
 .nav-item {
     color: black;
     padding: 0.1em 0.625em; 
@@ -35,6 +36,7 @@ body {
     min-width: 160px;
     z-index: 100;
 }
+/*All a elements in drop*/
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
