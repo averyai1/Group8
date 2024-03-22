@@ -57,7 +57,7 @@ body.blurred > :not(.navbar) {
 body > :not(.navbar) {
     transition: filter 0.5s ease;
 }
-.section-title {
+.photo-title {
     text-align: center;
     margin: 40px 0 20px;
 }
@@ -80,7 +80,7 @@ body > :not(.navbar) {
 }
 
 /*setting area for project goal section also where we set opacity for it*/
-.project-goal-content {
+.goal-sent {
     position: absolute;
     bottom: 10%; 
     left: 50%;
@@ -113,16 +113,16 @@ img {vertical-align: middle;}
     justify-content: space-between; 
     margin: 20px 0;
 }
-.photo-item {
+.photo {
     width: calc(33.333% - 20px);
     padding: 0 10px; 
 }
-.photo-item img {
+.photo img {
     width: 100%;
     height: auto;
     display: block; 
 }
-.photo-caption {
+.caption {
     text-align: center;
 }
 

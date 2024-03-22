@@ -13,8 +13,8 @@ navbar.addEventListener('mouseleave', () => toggleBlur(false));
 
 document.querySelectorAll('.nav-item a').forEach(link => {
   link.addEventListener('click', function(e) {
-      e.preventDefault(); // Stop the default anchor behavior
-      const targetId = this.getAttribute('href').substring(1); // Get the target ID (removing the #)
+      e.preventDefault(); 
+      const targetId = this.getAttribute('href').substring(1); 
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
