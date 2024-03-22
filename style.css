@@ -31,9 +31,8 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 100;
 }
 .dropdown-content a {
@@ -45,9 +44,7 @@ body {
 .nav-item.dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
+
 
 /*Adding and removing blur affect and transitioning it in and out*/
 .no-blur {
@@ -60,10 +57,6 @@ body.blurred > :not(.navbar) {
 body > :not(.navbar) {
     transition: filter 0.5s ease;
 }
-
-/*image positioning*/
-
-
 .section-title {
     text-align: center;
     margin: 40px 0 20px;
@@ -93,46 +86,42 @@ body > :not(.navbar) {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; 
-    background: rgba(255, 255, 255, 0); /*last number is for opacity*/
+    background: rgba(255, 255, 255, 0); /*THIS IS WHERE YOU CHANGE OPACITY*/
     padding: 20px;
     text-align: center; 
     color: #ffffff; 
     width: 90%; 
 }
-
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
     }
-
     .nav-item {
         padding: 0.5em; 
         font-size: calc(0.8em + 2vw); 
     }
 }
 
+
+/*Photo content styling and positioning*/
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
-
 .photo-grid {
     display: flex;
     justify-content: space-between; 
     margin: 20px 0;
 }
-
 .photo-item {
     width: calc(33.333% - 20px);
     padding: 0 10px; 
 }
-
 .photo-item img {
     width: 100%;
     height: auto;
     display: block; 
 }
-
 .photo-caption {
     text-align: center;
 }
@@ -140,10 +129,11 @@ img {vertical-align: middle;}
 /*Power Description*/
 .powerdesc{
     text-align: center;
-    width: 60%;
-    margin: 0 auto; /* Centers the div */
-    padding: 2em;
-
+    width: 80%;
+    margin: 0 auto; 
+}
+.powerdesc{
+    font-size: 20px;;
 }
 
 /*table styling*/
@@ -154,17 +144,13 @@ img {vertical-align: middle;}
     z-index: 1; 
     padding: 20px;
 }
-
 th{
-    font-size: 40px;
+    font-size: 30px;
     padding: .5em;
 }
 td{
     font-size: 15px;
     text-align: center;
-}
-tr{
-
 }
 
 /*Arduino Graph styling*/
@@ -175,7 +161,11 @@ tr{
     
 }
 
+/*spacing and whitespace*/
+.spacing{
+    height: 4em;
+}
 
 .whitespace{
-    height: 25em;
+    height: 30em;
 }
