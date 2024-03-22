@@ -17,6 +17,7 @@
                     <a href="#project-goal" data-target="project-goal">Project Goal</a>
                     <a href="#photos" data-target="photos">Photos</a>
                     <a href="#power1" data-target="power1">Resistance & Power</a>
+                    <a href="#journals" data-target="journals">Design Journals</a>
                 </div>
         </div>
         <a href="#vision" class="nav-item">Vision</a>
@@ -34,10 +35,9 @@
     <div class="video-background-container" id="project-goal">
         <video autoplay muted loop class="video-background">
             <source src="windTurbine.mp4" type="video/mp4">
-            Your browser does not support the video tag.
         </video>
         <div class="project-goal-content">
-            <h2>Project Goal</h2>
+            <h2>Group 8</h2>
             <p>Our goal for this wind turbine project is to generate electricity from kinetic wind energy and then to track it with the use of a website.</p>
         </div>
     </div>
@@ -46,41 +46,20 @@
     <h2 id="photos" class="section-title">Team Photos</h2>
 
     <!-- Group Photos Section -->
-<!-- Group Photos Section -->
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img class="imgsl" src="images/group.jpg">
-      <div class="text">Caption Text</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img class="imgsl" src="images/team2.jpeg">
-      <div class="text">Caption Two</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img class="imgsl" src="images/blades.jpg">
-      <div class="text">Caption Three</div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-  
-      
+    <div class="photo-grid">
+        <div class="photo-item">
+            <img src="images/group.png" alt="Group photo">
+            <p class="photo-caption"></p>
+        </div>
+        <div class="photo-item">
+            <img src="images/measuring.png" alt="Measuring power in MatLab">
+            <p class="photo-caption">Measuring Power Through MatLab</p>
+        </div>
+        <div class="photo-item">
+            <img src="images/bestdesign.png" alt="Best turbine design">
+            <p class="photo-caption">Best Wind Turbine Design</p>
+        </div>
+    </div>   
 
     <!--summarizes how power was measured (setup, what was measured, etc.) in the lab for Week 5 Day 2-->
     <div class="powerdesc">
@@ -90,6 +69,7 @@
     </div>
 
     <!--includes a table with the results for the 4 resistors (use <table> tags for this)-->
+    <!--Also added the graph image here so it has more context-->
     <div id="power1">
         <table   class="resTable">
             <tr>
@@ -122,11 +102,18 @@
     <!--includes an unordered list of links to your design journals (and eventually to each team member's 
     individual page, but those individual pages are not due yet). To get the correct link in Google Document, 
     you can go to File → Share → Share with others → Copy Link, and then use that in your HTML.-->
-    <div>
-        <h2></h2>
-        <p></p>
+    <div id="journals">
+        <ul>
+            <li><a href="https://docs.google.com/document/d/1nQ0FTGe8lKTvk84MuP4IifwYwlxS_8dd3Y1lwWfNWow/edit?usp=sharing" target="_blank">W2D2 Design Journal</a></li>
+            <li><a href="https://docs.google.com/document/d/16ua6GUuRWJs-Pvfqk8bujL5-ozeDl47wiPRQPFdAx1E/edit?usp=sharing" target="_blank">W4D2 Design Journal</a></li>
+            <li><a href="https://docs.google.com/document/d/1tYjnLduPvROf8cZiPaXMXqeB9NEo848_RsDbqzqaQPQ/edit?usp=sharing" target="_blank">W5D2 Design Journal</a></li>
+            <li><a href="https://docs.google.com/document/d/1BL8LJzzZH2Qjl7n2pw_GlJFXMmPGDipg/edit?usp=sharing&ouid=118038980924812334645&rtpof=true&sd=true" target="_blank">W6D2 Design Journal</a></li>
+            <li><a href="https://docs.google.com/document/d/1E85Mnn3ZByMnWIggXzPptZLod_uFWlCNnXQKtYJf5Kg/edit?usp=sharing" target="_blank">W7D2 Design Journal</a></li>
+        </ul>
     </div>
-
+    
+    <!--For adding whitespace to bottom of the page-->
+    <div class="whitespace"></div>
 
 
     <script src="script.js"></script>
