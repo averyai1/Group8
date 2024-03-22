@@ -46,11 +46,41 @@
     <h2 id="photos" class="section-title">Team Photos</h2>
 
     <!-- Group Photos Section -->
-    <div class="image-row">
-        <img src="images/group1.jpeg" alt="Group Image 1" class="home-image">
-        <img src="images/team2.jpeg" alt="Group Image 2" class="home-image">
-        <img src="images/group3.jpeg" alt="Group Image 3" class="home-image">
+<!-- Group Photos Section -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="imgsl" src="images/group.jpg">
+      <div class="text">Caption Text</div>
     </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="imgsl" src="images/team2.jpeg">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="imgsl" src="images/blades.jpg">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+  
+      
 
     <!--summarizes how power was measured (setup, what was measured, etc.) in the lab for Week 5 Day 2-->
     <div class="powerdesc">
