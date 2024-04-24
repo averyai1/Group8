@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', sans-serif;
+}
+
+/*Handling nav bar items and styling for them*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: 0.5px solid darkgrey;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+/*Nav bar individual items*/
+.nav-item {
+    color: black;
+    padding: 0.1em 0.625em; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: calc(0.9em + 0.5vw); 
+    position: relative;
+}
+
+
+/* Dropdown styles and content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 100;
+}
+/*All a elements in drop*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*Adding and removing blur affect and transitioning it in and out*/
+.no-blur {
+    filter: none;
+}
+body.blurred > :not(.navbar) {
+    filter: blur(2px);
+    transition: filter 0.5s ease;
+}
+body > :not(.navbar) {
+    transition: filter 0.5s ease;
+}
+.photo-title {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-item {
+        padding: 0.5em; 
+        font-size: calc(0.8em + 2vw); 
+    }
+}
+
+
+/*Photo content styling and positioning*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.photo-grid {
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 0;
+}
+
+.image {
+    position: absolute;
+    top:20%;
+    left: 40%;
+}
+
+
+  
+  .neon{
+    font-family: 'Monoton', cursive;
+    font-size:130px;
+    color: #FFD5FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  }
+  
+  .flicker-slow{
+    animation: flicker 3s linear infinite;
+  }
+  
+  .flicker-fast{
+    animation: flicker 1s linear infinite;
+  }
+  
+  @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        text-shadow: none;
+      opacity: .99;
+          
+      }
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+          opacity: 0.4;
+      }
+  }
