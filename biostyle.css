@@ -89,10 +89,11 @@ img {vertical-align: middle;}
     margin: 20px 0;
 }
 .image {
+    margin-top: 10em;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 28%;
   }
 
 
