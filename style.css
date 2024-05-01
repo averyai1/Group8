@@ -177,4 +177,13 @@ td{
     text-align: center;
     width: 80%;
     margin: 0 auto; 
+    list-style-position: inside;
+}
+
+.list{
+    text-align: left;
+    display: inline-block;
+}
+.center{
+    text-align: center;
 }
