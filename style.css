@@ -165,7 +165,7 @@ td{
 
 /*spacing and whitespace*/
 .spacing{
-    height: 4em;
+    height: 6em;
 }
 
 .whitespace{
@@ -184,6 +184,39 @@ td{
     text-align: left;
     display: inline-block;
 }
-.center{
+
+.center {
     text-align: center;
 }
+
+.turbinelist {
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    padding: 20px;
+    font-size: 25px;
+}
+
+.bestimg{
+    width: calc(50% - 40px); 
+    border-radius: 10px;
+    margin-left: 45%;
+    width: 40%;
+}
+
+.teampos{
+    border-radius: 10px;
+    margin-left: 15%;
+    width: 60%;
+    font-size: 20px;
+    margin-top:15%;
+}
+
+.journalpos{
+    border-radius: 10px;
+    margin-left: 55%;
+    font-size: 20px;
+    margin-top:-15.2%;
+}
+/* Remove existing spacing styles for .spacing and .whitespace if not needed */
